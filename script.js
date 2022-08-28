@@ -31,9 +31,10 @@ let months = [
   "December",
 ];
 let month = months[now.getMonth()];
+let year = year[now.getFullYear];
 t.innerHTML = `${hours}:${minutes}`;
 
-f.innerHTML = `${day}, ${date}, ${month}`;
+f.innerHTML = `${day}, ${date}, ${month}, ${year}`;
 
 function cityTemperature(response) {
   console.log(response.data);
